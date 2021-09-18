@@ -15,43 +15,65 @@
 </head>
 <body>
     
-   <form action="">
+<div class="row">
+         <div class="col-md-2"></div>
+         <div class="col-md-8" id="signup_msg">
+            <!--This is the alert division this is used
+               Getting Alers from signup form-->
+         </div>
+         <div class="col-md-2"></div>
+      </div>
+
+
+
+
+    
+   <form action="Validation.php" method="post">
       <h1>Customer Registration</h1>
          <img src="Elek2.png" alt="User Registration" srcset="" >
          <div class="input-box">
             <span><i class="bi bi-person"></i></span>
-            <input type="text" placeholder="User Name" required>
+            <input type="text" placeholder="First Name" name="f_name" required>
+         </div>
+         <div class="input-box">
+            <span><i class="bi bi-person"></i></span>
+            <input type="text" placeholder="Last Name" name="l_name" required>
          </div>
          <div class="input-box">
             <span><i class="bi bi-envelope"></i></span>
-            <input type="email" placeholder="Email" required>
+            <input type="email" placeholder="Email" name="email" required>
 
          </div>
          <div class="input-box">
             <span><i class="bi bi-eye"></i></span>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" name="password" required>
 
          </div>
          <div class="input-box">
             <span><i class="bi bi-eye"></i></span>
-            <input type="password" placeholder="Confirm Password" required>
+            <input type="password" placeholder="Confirm Password" name="repassword" required>
 
          </div>
          <div class="input-box">
             <span><i class="bi bi-eye"></i></span>
-            <input type="textarea" placeholder="Address" required>
+            <input type="textarea" placeholder="Address Line 1" name="address1" required>
 
          </div>
          <div class="input-box">
             <span><i class="bi bi-eye"></i></span>
-            <input type="number" placeholder="Phone number" required>
+            <input type="textarea" placeholder="Address Line 2" name="address2" required>
+
+         </div>
+         <div class="input-box">
+            <span><i class="bi bi-eye"></i></span>
+            <input type="number" placeholder="Phone number" name="mobile" required>
 
          </div>
     
               
          
          <div class="button">            
-            <button type="submit">Register</button>
+            <button type="submit" name="Register">Register</button>
          </div>
          
 
