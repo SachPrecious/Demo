@@ -2,16 +2,32 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
 </head>
 <body>
+	<div class="row">
+         <div class="col-md-2"></div>
+         <div class="col-md-8" id="signup_msg">
+            <!--This is the alert division this is used
+               Getting Alers from signup form-->
+         </div>
+         <div class="col-md-2"></div>
+      </div>
     <a href="Login.php">Click To login</a>
 </body>
 </html>
 
 <?php
+
 session_start();
 include "DatabaseConnection.php";
+
 
 
 
