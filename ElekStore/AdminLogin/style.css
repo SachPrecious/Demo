@@ -1,0 +1,89 @@
+h1{
+  color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 1px;
+  border: #efefef;
+
+}
+
+img{
+width: 352px;
+height: 155px;
+
+}
+body{
+
+  background: #01BDFD;
+
+font-family: sans-serif;
+
+
+}
+form{
+
+ width: 500px;
+ margin: 8% auto;
+ padding: 50px 0;
+ text-align: center;
+ box-shadow: 0 20px 40px rgb(0, 0, 0);
+
+}
+.input-box{
+
+ margin: 30px auto;
+ width: 90%;
+ box-shadow: 0 8px 10px rgb(0, 0, 0);
+ position: relative;
+
+    
+
+
+}
+.input-box input{
+
+    
+   
+    width: 70%;
+    height: 40px;
+    border: none;
+    background: #efefef;     
+    padding-left: 50px; 
+    
+   
+   }
+
+span{
+
+position: absolute;
+left: 10px;
+top: 10px; ;
+height: auto;
+width: auto;
+background: linear-gradient(to right,#9ac2ff,#a9c2a9ff);
+
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: azure;
+    display: block;
+    border: 0ch;
+    font-size: 16px;
+    outline: none;
+    align-content: center;
+    background: linear-gradient(to right,rgb(49, 104, 255),rgb(49, 104, 255));
+    box-shadow: 0 20px 40px rgb(0, 0, 26);
+    cursor: pointer;
+    
+
+}
+
+button .fa{
+margin-right: 10px;
+
+}

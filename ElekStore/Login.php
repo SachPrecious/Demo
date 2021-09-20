@@ -1,3 +1,5 @@
+<?php  session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +24,7 @@
                Getting Alers from signup form-->
          </div>
          <div class="col-md-2"></div>
-      </div>
+</div>
 
 
 
@@ -30,7 +32,7 @@
     
    <form action="Profile.php" method="post">
       <h1>Customer Registration</h1>
-         <img src="Elek2.png" alt="User Login" srcset="" >
+         <img src="Images/Elek2.png" alt="User Login" srcset="" >
          
          <div class="input-box">
             <span><i class="bi bi-envelope"></i></span>
