@@ -1,6 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+    <a href="Login.php">Click To login</a>
+</body>
+</html>
+
 <?php
 session_start();
 include "DatabaseConnection.php";
+
+
+
+
 if (isset($_POST["f_name"]))
 {
 
@@ -130,7 +145,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	}
 	else 
 	{
-		$password = md5($password);
+		
 		$sql = "INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) 
 		VALUES (NULL, '$f_name', '$l_name', '$email','$password', '$mobile', '$address1', '$address2')";
 		
@@ -140,11 +155,14 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		$_SESSION["name"] = $f_name;
 		$ip_add = getenv("REMOTE_ADDR");
 		$sql = "UPDATE cart SET user_id = '$_SESSION[uid]' WHERE ip_add='$ip_add' AND user_id = -1";
+		
 		if(mysqli_query($con,$sql)){
 			echo "register_success";
 			exit();
 		}
 	}
+
+
 	}
 	
 }
